@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- display : inline 대체 float: left 사용 가능 -->
+    <style>
+        /*
+        div, h1{border: 1px solid blue; margin: 10px;}
+       */
+
+       #header{width: 800px; margin: auto; background-color: rgb(230, 49, 176);}
+       #wrap{width: 800px; margin: auto; overflow: hidden; /*부모를 벗어난 자식은 숨기라*/}
+       #aside{width: 200px; float: left; /*가로로 배치하기*/ background-color: rgba(70, 109, 237, 0.933);}
+       #content{width: 600px; float: left; /*가로로 배치하기*/ background-color: rgb(28, 176, 28);}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>#Header 태그</h1>
+    </div>
+
+    <div id="wrap">
+        <div id="aside">
+            <h1>#aside 태그</h1>
+        </div>
+
+        <div id="content">
+            <h1>#content 태그</h1>
+        </div>
+    </div>
+</body>
+</html>

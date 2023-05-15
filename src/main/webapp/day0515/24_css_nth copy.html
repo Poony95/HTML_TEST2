@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--padding은 안쪽 여백/ margin은 바깥쪽 여백-->
+    <style>
+        li{
+            list-style-type: none;
+            float: left;
+            padding: 15px; 
+            background-color: pink;
+        }
+        li:first-child{border-radius: 20px 0 0 20px;}
+        li:last-child{border-radius: 0 20px 20px 0;}
+        li:nth-child(2n){background-color: rgb(154, 244, 251);}
+        li:nth-child(2n+1){background-color: rgb(166, 181, 248);}
+        li:hover{background-color: rgb(66, 140, 100);}
+        li:active{background-color: palevioletred;}
+    </style>
+</head>
+<body>
+    <ul>
+        <li>첫번째</li>
+        <li>두번째</li>
+        <li>세번째</li>
+        <li>네번째</li>
+        <li>다섯번째</li>
+        <li>여섯번째</li>
+        <li>일곱번째</li>
+    </ul>
+</body>
+</html>

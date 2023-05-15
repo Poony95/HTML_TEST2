@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- > 적용하면 자손 선택 ( 후손은 선택안됩니다)-->
+    <style>
+        #header > h1{color: red;}
+        #section > h1{color: orange;}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1 class="title">홍길동</h1>
+        <div id="nav">
+            <h1>Navigation</h1>
+        </div>
+    </div>
+    <div id="section">
+        <h1 class="title">이순신</h1>
+        <p>서울시 마포구 서교동</p>
+    </div>
+</body>
+</html>
